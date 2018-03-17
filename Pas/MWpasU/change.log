@@ -1,0 +1,77 @@
+Change Log: MWpasU
+
+[Version 1.4.5c] (09.10.2008: MWconn 4.5 release)
+- support for MWconn instance name has been introduced (as optional parameters)
+- IsMWconnRunning() has been introduced (checked via MWconn's semaphore)
+- constant MWconnSemaphore added
+- compiler switches updated
+- constants updated
+
+[Version 1.4.3.1c] (19.07.2008: interoperability release)
+- constant MWconnU_CopyrightOwner has been added
+- constant MWconnU_CopyrightYear has been added
+- constant MWconnU_Name has been added
+- constant MWconnU_ReleaseDate has been added
+- constant MWconnU_ReleaseName has been added
+- constant MWconnU_Version has been added
+- type TAccessMode renamed to TMWconnAccessMode
+- type TOperationMode renamed to TMWconnOperationMode
+- enumerators am[Name] renamed to mwam[Name]
+- enumerators om[Name] renamed to mwom[Name]
+
+[Version 1.4.3c] (28.05.2008: MWconn 4.3 release)
+- compiler switches updated
+- constants updated
+
+[Version 1.4.2c] (11.04.2008: MWconn 4.2 release)
+- compiler switches updated
+- compiler switch MWCONN_3_9 renamed to MWCONN_3_9_TO_3_9
+- constants updated
+
+[Version 1.4.1c] (29.02.2008: reversioning release)
+- MWconnU[N].inc has been renamed to MWstruct[N].inc
+- all structures now have constants denoting the MWconn versions they are compatible to
+- MWconnU.inc has been renamed to MWdefs.inc
+- PMWconnIO has been moved to MWdefs.inc
+- TAccessMode has been moved to MWtypes.inc
+- TOperationMode has been added to MWtypes.inc
+- all constants have been moved to MWconsts.inc
+- MWconnU.inc now contains all other includes in their correct order
+- AccessModeToString() has been added
+- GetOperationMode() has been added
+- OperationModeToString() has been added
+- ProgramVersionToString() has been added
+- change log has been moved to the file change.log
+- version of MWconnU has been changed so it reflects the MWconn version it is compatible to
+
+[Version 0.6c] (25.02.2008: structure version 3 release)
+- compiler switches updated
+- data structure updated
+
+[Version 0.5c] (12.02.2008: 4.0 release)
+- compiler switches updated
+- constant MWconnFileGlobal added that specifies the global shared memory identifier
+- OpenMWconnIO() checks what shared memory access is granted (none|read|write|all)
+- OpenMWconnIO() checks whether shared memory is accessable globally
+
+[Version 0.4.1c] (10.01.2008: 3.11 release)
+- compiler switches updated
+
+[Version 0.4c] (21.12.2007: versioning release)
+- moved compiler switching to seperate include file (MWconnU.inc)
+- structures are now references by their version (and not the version of MWconn)
+- moved structure versions to seperate include files (MWconnU[N].inc)
+
+[Version 0.3c] (11.12.2007: 3.10 release)
+- renamed types and compiler switches
+
+[Version 0.3b] (16.11.2007: 3.9C release)
+- support for 3.9C (not just 3.9 stable)
+
+[Version 0.2c] (13.11.2007: extended release)
+- calling method split into three methods (shared memory accessible now)
+- command constants introduced
+
+[Version 0.1c] (13.11.2007: initial release)
+- structure definition translated from C to Pascal
+- calling method written
